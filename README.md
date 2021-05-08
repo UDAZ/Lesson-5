@@ -62,7 +62,11 @@ class SearchController < ApplicationController
     end
 end
 ```
-③_header.html.erbに追記
+### ③routesに追記
+```
+get '/search' => 'search#search'
+```
+### ④_header.html.erbに追記
 ```
     <div clas="row">
       <div class="col-xs-6 col-xs-offset-3 text-center" style="margin-top:25px;">
